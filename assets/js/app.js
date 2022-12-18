@@ -40,6 +40,7 @@ function showTodo(filter) {
       });
   }
   todoList.innerHTML = li || `<span>You don't have any task here</span>`;
+  todoList.offsetHeight >= 300 ? todoList.classList.add("overflow") : todoList.classList.remove("overflow");
 }
 showTodo('all');
 

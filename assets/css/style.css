@@ -104,24 +104,27 @@ input:focus-visible{
 
 
 #todo_list .bottom_section{
-margin-block: 10px;
 }
 #todo_list .bottom_section ul{
 position: relative;
 display: block;
 padding: 0;
 padding-inline: 15px;
-max-height: 250PX;
 margin: 0;
-overflow-y: scroll;
+}
+#todo_list .bottom_section .overflow {
+    overflow-y: auto;
+    max-height: 300px;
 }
 #todo_list .bottom_section ul::-webkit-scrollbar{
   width: 5px;
-  background: #919191;
+  background: #f1f1f1;
+  border-radius: 25px;
 
 }
 #todo_list .bottom_section ul::-webkit-scrollbar-thumb{
-  background: #4c4c4c;
+  background: #e6e6e6;
+  border-radius: 25px;
 }
 #todo_list .bottom_section ul li{
 position: relative;
@@ -170,9 +173,7 @@ input:focus-visible{
 transition: transform 0.2s ease;
 overflow-y: auto;
 }
-#todo_list .bottom_section ul li:last-child .setting ul{
-  bottom: 20px
-}
+
 #todo_list .bottom_section ul li .setting .hover{
   transform: scale(1);
 }
@@ -181,7 +182,12 @@ input:focus-visible{
 padding: 0;
 padding-block: 5px;
 }
-
+#todo_list .bottom_section ul li:last-child .setting ul {
+bottom: 30px;
+}
+#todo_list .bottom_section ul li:first-child .setting ul {
+bottom: -60px;
+}
 #todo_list .bottom_section ul li .setting ul li a {
     display: flex;
     justify-content: flex-start;
