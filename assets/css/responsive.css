@@ -1,0 +1,6 @@
+@media (max-width: 576px){
+  #todo_list{
+  margin: 0;
+  width: 100%;
+  }
+}

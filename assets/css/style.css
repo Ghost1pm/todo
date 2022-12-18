@@ -1,0 +1,204 @@
+
+.checked{
+  text-decoration: line-through;
+}
+a{
+color: #000;
+  text-decoration: none;
+
+}
+a:hover{
+
+color: #000;
+  text-decoration: none;
+
+}
+body{
+background: rgb(29,158,184);
+display: flex;
+justify-content: center;
+height: 100vh;
+align-items: center;
+box-sizing: border-box;
+}
+hr{
+margin: 0;
+}
+main{
+padding-inline: 15px;
+}
+input:focus-visible{
+      outline: -webkit-focus-ring-color auto 0px;
+}
+#todo_list{
+position: relative;
+display: inline-block;
+background: #ffff;
+border-radius: 10px;
+width: 350px;
+padding-bottom: 20px;
+}
+#todo_list .top_section{
+padding: 25px 18px 18px 18px;
+}
+#todo_list .top_section .input_items{
+position: relative;
+display: block;
+border: 2px solid #737373;
+border-radius: 4px;
+padding: 8px;
+}
+#todo_list .top_section .input_items input{
+position: relative;
+display: inline-block;
+width: 85%;
+border: none;
+font-size: 20px;
+font-weight: 500;
+background: transparent;
+}
+#todo_list .top_section .input_items img{
+position: relative;
+display: inline-block;
+margin-top: -5px;
+}
+#todo_list .top_section .nav{
+margin-top: 20px;
+justify-content: space-between;
+}
+#todo_list .top_section .nav ul{
+position: relative;
+display: block;
+padding: 0;
+margin: 0;
+}
+#todo_list .top_section .nav ul li{
+position: relative;
+display: inline-block;
+padding-inline-end: 4px;
+}
+#todo_list .top_section .nav ul .active a{
+  color: #1d9eb8;
+}
+#todo_list .top_section .nav button{
+position: relative;
+display: block;
+background: #1d9eb8;
+border: none;
+color: #fff;
+font-size: 12px;
+padding: 5px 10px;
+border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#todo_list .bottom_section{
+margin-block: 10px;
+}
+#todo_list .bottom_section ul{
+position: relative;
+display: block;
+padding: 0;
+padding-inline: 15px;
+max-height: 250PX;
+margin: 0;
+overflow-y: scroll;
+}
+#todo_list .bottom_section ul::-webkit-scrollbar{
+  width: 5px;
+  background: #919191;
+
+}
+#todo_list .bottom_section ul::-webkit-scrollbar-thumb{
+  background: #4c4c4c;
+}
+#todo_list .bottom_section ul li{
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-block: 16px;
+border-bottom: 1px solid #ccc;
+}
+#todo_list .bottom_section ul li:last-child{
+  border-bottom: none;
+}
+#todo_list .bottom_section ul li label{
+position: relative;
+display: flex;
+}
+#todo_list .bottom_section ul li label input{
+position: relative;
+display: block;
+margin-inline-end: 10px;
+}
+#todo_list .bottom_section ul li label p{
+position: relative;
+display: block;
+margin: 0;
+padding-right: 5px;
+}
+#todo_list .bottom_section ul li .setting img{
+position: relative;
+display: block;
+width: 15px;
+}
+
+#todo_list .bottom_section ul li .setting ul{
+position: absolute;
+display: block;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
+padding-inline: 10px;
+font-weight: 500;
+right: -5px;
+transform: scale(0);
+z-index: 2;
+transform-origin: top right;
+transition: transform 0.2s ease;
+overflow-y: auto;
+}
+#todo_list .bottom_section ul li:last-child .setting ul{
+  bottom: 20px
+}
+#todo_list .bottom_section ul li .setting .hover{
+  transform: scale(1);
+}
+
+#todo_list .bottom_section ul li .setting ul li{
+padding: 0;
+padding-block: 5px;
+}
+
+#todo_list .bottom_section ul li .setting ul li a {
+    display: flex;
+    justify-content: flex-start;
+}
+#todo_list .bottom_section ul li .setting ul li img{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//
