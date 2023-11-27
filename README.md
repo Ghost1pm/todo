@@ -1,2 +1,2 @@
 # todo
-# [TODO app](https://shinChan54.github.io/todo/)
+# [TODO app](https://Ghost1pm.github.io/todo/)
